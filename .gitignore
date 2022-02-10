@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.env*
+.idea/*
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.development
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dfx
+src/keys
+
+# assets
+src/assets/accessory_layers/*
+src/assets/nft_metadata/*
+src/assets/nft_generation/*
+src/assets/accessory_metadata/*
+
+src/assets/nft_generation/metadata/*
+
+assets/*
+metadata
+metadata/*
+
+**/keys
