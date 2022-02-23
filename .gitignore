@@ -37,7 +37,8 @@ src/assets/accessory_metadata/*
 src/assets/nft_generation/metadata/*
 
 assets/*
-metadata
+assets_original/*
+metadata_original
 metadata/*
 
 **/keys
