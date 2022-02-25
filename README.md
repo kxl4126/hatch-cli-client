@@ -72,8 +72,8 @@ b. Edit `config/links.json` with links to your media. This includes `gif`, `logo
     - NFTs 6-7: 1.1 WICP
     - NFTs 8+: 1.2 WICP
 2. (Optional) Add whitelisted principals to `config/whitelist.json`. This should take the array format:
-```
+`
 ["w4p43-4ps3u-broth-qnrd4-b7xku-brckl-fsnw6-wymoq-dle44-viw3y-bqe", ...]
-```
+`   
 These principals will be given the whitelist discount specified in `saleConfig.json`.  
 3. **Run** `hatch-cli sale` to set up your sale. You can always change your sale configuration, as long as no NFTs have been sold yet. **Run `hatch-cli sale -f` to force another set up sale with a different `config/saleConfig.json`**.
