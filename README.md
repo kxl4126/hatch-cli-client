@@ -14,9 +14,9 @@ This is the tool that will automatically handle the NFT backend for you.
 2. Run `hatch-cli identity`. 
 Save the output principal of the previous command. This is your minting account that needs to be funded for the CLI. Note that this account will be only used to manage your canister from the command line. Your NFTs and sale funds will still be minted to an account of your choice.
 3. Obtain **Psychedelic's WICP**. You need around ~ 1 WICP in the minting account. You can get WICP in the following ways:
-   a. Swap ICP for WICP with [Sonic](https://sonic.ooo/)
-   b. Or mint WICP directly from their canister. Follow the instructions at https://github.com/Psychedelic/wicp.
-   c. Or wrap your ICP with the wallet interface at [Hatch](hatch.com).
+   - Swap ICP for WICP with [Sonic](https://sonic.ooo/)
+   - Or mint WICP directly from their canister. Follow the instructions at https://github.com/Psychedelic/wicp.
+   - Or wrap your ICP with the wallet interface at [Hatch](hatch.com).
 4. **Transfer WICP** to your minting account principal. You can do this in the following ways:
    -  Use the Plug Wallet interface to transfer WICP to your minting principal.
    -  Or call transfer function directly from their canister to your principal. Follow the instructions at https://github.com/Psychedelic/wicp.
@@ -27,8 +27,8 @@ Check the `config/` directory to manage different configuration options for your
 a. Edit `config/config.json` to include basic metadata for your collection, like `name`, `supply`, and `description`. The `saleName` field must be **unique**, as it identifies your project sale link. The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct!
 b. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
 2. **Place your NFT assets and metadata in the correct location.**
-    a. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id.
-    b. Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ...  This serves as the corresponding NFT metadata.
+   - Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id.
+   - Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata.
    **Example folder structure:**
    ![Assets](https://i.imgur.com/3Ny9myT.png)
    ![Metadata](https://i.imgur.com/ZsaiwQI.png)
@@ -52,10 +52,10 @@ b. Edit `config/links.json` with links to your media. This includes `gif`, `logo
 ### Configure and host your public sale
 **Here we will set up the properties of your public sale!**
 1. **Edit config/saleConfig.json.**
-   a. `saleTime` represents the unix timestamp (in seconds) of your public sale start time.
-   b. `whitelistDiscount` represents how much discount (in ICP) whitelisted members get.
-   c. `reserveAmount` is how many NFTs to exclude from the sale. Those will be kept in the owner account.
-   d. `prices` represents the pricing configuration desired. It takes the format of an array of tuples [nft_id, price], where `nft_id` represents the starting nft id for a particular price tier, and price represents the price (in WICP) of that tier. Example shown below.
+   - `saleTime` represents the unix timestamp (in seconds) of your public sale start time.
+   - `whitelistDiscount` represents how much discount (in ICP) whitelisted members get.
+   - `reserveAmount` is how many NFTs to exclude from the sale. Those will be kept in the owner account.
+   - `prices` represents the pricing configuration desired. It takes the format of an array of tuples [nft_id, price], where `nft_id` represents the starting nft id for a particular price tier, and price represents the price (in WICP) of that tier. Example shown below.
    **Example saleConfig.json**
    ```
    {
@@ -71,7 +71,7 @@ b. Edit `config/links.json` with links to your media. This includes `gif`, `logo
     - NFTs 4-5: 1 WICP
     - NFTs 6-7: 1.1 WICP
     - NFTs 8+: 1.2 WICP
-2. (Optional) Add whitelisted principals to `config/whitelist.json`. This should take the array format:
+1. (Optional) Add whitelisted principals to `config/whitelist.json`. This should take the array format:
 ```
 ["w4p43-4ps3u-broth-qnrd4-b7xku-brckl-fsnw6-wymoq-dle44-viw3y-bqe", ...]
 ```
