@@ -18,8 +18,8 @@ Save the output principal of the previous command. This is your minting account 
    b. Or mint WICP directly from their canister. Follow the instructions at https://github.com/Psychedelic/wicp.
    c. Or wrap your ICP with the wallet interface at [Hatch](hatch.com).
 4. **Transfer WICP** to your minting account principal. You can do this in the following ways:
-    a. Use the Plug Wallet interface to transfer WICP to your minting principal.
-    b. Or call transfer function directly from their canister to your principal. Follow the instructions at https://github.com/Psychedelic/wicp.
+ -  Use the Plug Wallet interface to transfer WICP to your minting principal.
+ -  Or call transfer function directly from their canister to your principal. Follow the instructions at https://github.com/Psychedelic/wicp.
 
 ### Configure your collection
 Check the `config/` directory to manage different configuration options for your collection.
