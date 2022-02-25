@@ -76,3 +76,11 @@ b. Edit `config/links.json` with links to your media. This includes `gif`, `logo
 ["w4p43-4ps3u-broth-qnrd4-b7xku-brckl-fsnw6-wymoq-dle44-viw3y-bqe", ...]
 ```
 3. **Run** `hatch-cli sale` to set up your sale. You can always change your sale configuration, as long as no NFTs have been sold yet. **Run `hatch-cli sale -f` to force another set up sale with a different `config/saleConfig.json`**.
+
+**All that's left is to wait for the big day!**
+
+View your sale at `https://hatchpad.com/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
+
+### Contact  
+If you need assistance in setting anything up, please contact us at:
+- [Discord](https://discord.gg/n77xjyspDR)
