@@ -18,18 +18,17 @@ Save the output principal of the previous command. This is your minting account 
    b. Or mint WICP directly from their canister. Follow the instructions at https://github.com/Psychedelic/wicp.
    c. Or wrap your ICP with the wallet interface at [Hatch](hatch.com).
 4. **Transfer WICP** to your minting account principal. You can do this in the following ways:
-   a. Use the Plug Wallet interface to transfer WICP to your minting principal.
-   b. Or call transfer function directly from their canister to your principal. Follow the instructions at https://github.com/Psychedelic/wicp.
+    a. Use the Plug Wallet interface to transfer WICP to your minting principal.
+    b. Or call transfer function directly from their canister to your principal. Follow the instructions at https://github.com/Psychedelic/wicp.
 
 ### Configure your collection
 Check the `config/` directory to manage different configuration options for your collection.
 1. **Configure your initial canister metadata.**
 a. Edit `config/config.json` to include basic metadata for your collection, like `name`, `supply`, and `description`. The `saleName` field must be **unique**, as it identifies your project sale link. The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct!
 b. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
-<br/>
 2. **Place your NFT assets and metadata in the correct location.**
-   a. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id.
-   b. Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ...  This serves as the corresponding NFT metadata.
+    a. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id.
+    b. Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ...  This serves as the corresponding NFT metadata.
    **Example folder structure:**
    ![Assets](https://i.imgur.com/3Ny9myT.png)
    ![Metadata](https://i.imgur.com/ZsaiwQI.png)
