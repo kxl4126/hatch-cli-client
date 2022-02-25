@@ -24,8 +24,8 @@ Save the output principal of the previous command. This is your minting account 
 ### Configure your collection
 Check the `config/` directory to manage different configuration options for your collection.
 1. **Configure your initial canister metadata.**
-a. Edit `config/config.json` to include basic metadata for your collection, like `name`, `supply`, and `description`. The `saleName` field must be **unique**, as it identifies your project sale link. The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct!
-b. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
+   I. Edit `config/config.json` to include basic metadata for your collection, like `name`, `supply`, and `description`. The `saleName` field must be **unique**, as it identifies your project sale link. The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct!
+   II. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
 2. **Place your NFT assets and metadata in the correct location.**
    - Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id.
    - Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata.  
