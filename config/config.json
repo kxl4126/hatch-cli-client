@@ -1,9 +1,8 @@
 {
-  "name": "ICTurtles",
-  "description": "Turtle nftsssss.",
+  "name": "Test NFT",
+  "description": "Launch any nft you want with a few commands!",
   "supply": 10000,
-  "symbol": "ICT",
+  "symbol": "MYNFT",
   "owner": "3x32x-6wmpm-csmia-yjxg3-c6tck-t3ctk-qhkyj-wribs-kv5ye-w7rwn-kqe",
-  "saleName": "icturtles37",
-  "mintCanister": "unr2c-oyaaa-aaaaa-aaa7a-cai"
+  "saleName": "testnft"
 }

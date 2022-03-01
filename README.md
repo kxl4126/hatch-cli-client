@@ -4,11 +4,13 @@
 
 ### Requirements
 - [Node](https://nodejs.org/en/)
+- [Git](https://github.com/git-guides/install-git)
 - We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet.
-### Install hatch CLI
+### Install hatch CLI and clone this repo
 This is the tool that will automatically handle the NFT backend for you.
 `npm install hatch-cli`
-
+Navigate to a directory you want to work in and run:`
+`git clone https://github.com/kxl4126/turtle-cli-client.git`
 ### Configure your identity and fund your minting account
 1. Place your `Ed25519` key in `keys/keys.json`. You can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`
 2. Run `hatch-cli identity`. 
@@ -47,7 +49,7 @@ Check the `config/` directory to manage different configuration options for your
 1. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
 2. **Run** `hatch-cli validate` to do a basic check that all your files are valid.
 3. **Run** `hatch-cli mint` to **mint your NFTs**! This process can take a while. The canister will save which NFTs you have minted, so feel free to pause the process at any time and re-run `hatch-cli mint` to continue where you left off! All NFTs will be minted to `owner` specified in config.
-
+4. (Optional) **Configure DAB** by submitting this [form](assets/0.pnghttps://dab-ooo.typeform.com/nft-list?typeform-source=dab.ooo). This will allow your NFTs to be surfaced on Plug and Stoic wallet. Choose **Departure Labs** as the standard for the nft.
 
 ### Configure and host your public sale
 **Here we will set up the properties of your public sale!**
