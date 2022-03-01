@@ -7,12 +7,14 @@
 - [Git](https://github.com/git-guides/install-git)
 - We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet.
 ### Install hatch CLI and clone this repo
-1. This is the tool that will automatically handle the NFT backend for you.
+1. This is the [tool](https://www.npmjs.com/package/hatch-cli) that will automatically handle the NFT backend for you.
 `npm install hatch-cli`
 2. Navigate to a directory you want to work in and run:
-`git clone https://github.com/kxl4126/turtle-cli-client.git`
+`git clone https://github.com/kxl4126/hatch-cli-client.git`
 ### Create basic directory structure
 Create three new, empty folders. One folder named **keys**, one named **assets**, and one named **metadata**. You will need these later.
+The folder structure should look something like:
+![Folder Structure](https://i.imgur.com/hib3a0g.png)
 ### Configure your identity and fund your minting account
 1. Place your `Ed25519` key in `keys/keys.json`. You can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`
 2. Run `hatch-cli identity`. 
@@ -69,7 +71,7 @@ Check the `config/` directory to manage different configuration options for your
         "reserveAmount": 0
     }
     ```
-    The `prices` here means the following:
+    The example `prices` here means the following:
     - NFTs 0-1: 0.8 WICP
     - NFTs 2-3: 0.9 WICP
     - NFTs 4-5: 1 WICP
