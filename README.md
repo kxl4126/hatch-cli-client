@@ -9,7 +9,7 @@
 ### Install hatch CLI and clone this repo
 This is the tool that will automatically handle the NFT backend for you.
 `npm install hatch-cli`
-Navigate to a directory you want to work in and run:`
+Navigate to a directory you want to work in and run:
 `git clone https://github.com/kxl4126/turtle-cli-client.git`
 ### Configure your identity and fund your minting account
 1. Place your `Ed25519` key in `keys/keys.json`. You can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`
