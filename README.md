@@ -7,10 +7,12 @@
 - [Git](https://github.com/git-guides/install-git)
 - We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet.
 ### Install hatch CLI and clone this repo
-This is the tool that will automatically handle the NFT backend for you.
+1. This is the tool that will automatically handle the NFT backend for you.
 `npm install hatch-cli`
-Navigate to a directory you want to work in and run:
+2. Navigate to a directory you want to work in and run:
 `git clone https://github.com/kxl4126/turtle-cli-client.git`
+### Create basic directory structure
+Create three new, empty folders. One folder named **keys**, one named **assets**, and one named **metadata**. You will need these later.
 ### Configure your identity and fund your minting account
 1. Place your `Ed25519` key in `keys/keys.json`. You can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`
 2. Run `hatch-cli identity`. 
