@@ -34,16 +34,16 @@ Check the `config/` directory to manage different configuration options for your
    2. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
 2. **Place your NFT assets and metadata in the correct location.**
    1. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id. **Current canister message limits means that each NFT can only be 2 MB max at the moment**. We hope to get around this in the future with streaming strategies.
-   2. Move your metadata (json) into the `metadata/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata. **Right now, all metadata is restricted to text fields**. We hope to make this more complex as Hatch gains traction.
+   2. Move your metadata (json) into the `metadata/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata. **Right now, all metadata is restricted to text metadata**. We hope to make this more complex as Hatch gains traction.
    **Example folder structure:**
    ![Assets](https://i.imgur.com/3Ny9myT.png)
    ![Metadata](https://i.imgur.com/ZsaiwQI.png)
     **Example metadata format**:
     ```
     {
-        "background": blue,
-        "head": large,
-        "eyes": round
+        "background": "blue",
+        "head": "large",
+        "eyes": "round"
         ...
     }
     ```
