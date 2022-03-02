@@ -6,15 +6,17 @@
 - [Node >= 16](https://nodejs.org/en/)
 - [Git](https://github.com/git-guides/install-git)
 - We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet. 
+
 ### Install hatch CLI and clone this repo
-1. This is the [tool](https://www.npmjs.com/package/hatch-cli) that will automatically handle the NFT backend for you.
-`npm install -g hatch-cli`
-2. Navigate to a directory you want to work in and run:
+1. Install [hatch-cli](https://www.npmjs.com/package/hatch-cli) via npm. It will automatically handle the NFT backend for you. <br/> `npm install -g hatch-cli`
+2. Navigate to a directory you want to work in and run:<br/>
 `git clone https://github.com/kxl4126/hatch-cli-client.git`
+
 ### Create basic directory structure
-Create three new, empty folders. One folder named **keys**, one named **assets**, and one named **metadata**. You will need these later.
+Make `keys/`, `assets/`, and `metadata/` folders. You will need these later.
 The folder structure should look something like:
 ![Folder Structure](https://i.imgur.com/hib3a0g.png)
+
 ### Configure your identity and fund your minting account
 1. Place your `Ed25519` key in `keys/keys.json`. If you don't have one, you can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`. **This identity is only used for minting and is different from your identity for your wallet or on the dfx CLI.**
 2. Run `hatch-cli identity`. 
@@ -30,7 +32,13 @@ Save the output principal of the previous command. This is your minting account 
 ### Configure your collection
 Check the `config/` directory to manage different configuration options for your collection.
 1. **Configure your initial canister metadata.**
-   1. Edit `config/config.json` to include basic metadata for your collection, like `name`, `supply`, and `description`. The `saleName` field must be **unique**, as it identifies your project sale link. The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct!
+   1. Edit `config/config.json` to include basic metadata for your collection.
+      - `name`: Your NFT collection's title (string)
+      - `description`: Asentence about your NFT. This will generally accompany the title (string)
+      - `supply`: how many NFTs your collection will hold (number)
+      - `owner`: The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct! (string)
+      - `saleName`: The `saleName` field must be **unique**, as it identifies your project sale link. It can only contain alphanumeric characters, or one of "-" , "." , "_" , "~"  (string)
+   
    2. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
 2. **Place your NFT assets and metadata in the correct location.**
    1. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id. **Current canister message limits means that each NFT can only be 2 MB max at the moment**. We hope to get around this in the future with streaming strategies.
@@ -50,7 +58,7 @@ Check the `config/` directory to manage different configuration options for your
     **Make sure your metadata matches up with your assets!**
 
 ### Initialize your NFT canister and mint your NFTs!
-1. Return to your root directory. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
+1. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
 2. **Run** `hatch-cli validate` to do a basic check that all your files are valid.
 3. **Run** `hatch-cli mint` to **mint your NFTs**! This process can take a while. The canister will save which NFTs you have minted, so feel free to pause the process at any time and re-run `hatch-cli mint` to continue where you left off! All NFTs will be minted to `owner` specified in config.
 4. (Optional) **Configure DAB** by submitting this [form](assets/0.pnghttps://dab-ooo.typeform.com/nft-list?typeform-source=dab.ooo). This will allow your NFTs to be surfaced on Plug and Stoic wallet. Choose **Departure Labs** as the standard for the nft.
