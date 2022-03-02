@@ -50,7 +50,7 @@ Check the `config/` directory to manage different configuration options for your
     **Make sure your metadata matches up with your assets!**
 
 ### Initialize your NFT canister and mint your NFTs!
-1. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
+1. Return to your root directory. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
 2. **Run** `hatch-cli validate` to do a basic check that all your files are valid.
 3. **Run** `hatch-cli mint` to **mint your NFTs**! This process can take a while. The canister will save which NFTs you have minted, so feel free to pause the process at any time and re-run `hatch-cli mint` to continue where you left off! All NFTs will be minted to `owner` specified in config.
 4. (Optional) **Configure DAB** by submitting this [form](assets/0.pnghttps://dab-ooo.typeform.com/nft-list?typeform-source=dab.ooo). This will allow your NFTs to be surfaced on Plug and Stoic wallet. Choose **Departure Labs** as the standard for the nft.
