@@ -39,3 +39,5 @@ assets/*
 assets_original/*
 metadata_original
 metadata/*
+
+fix.py

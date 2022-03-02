@@ -3,12 +3,12 @@
 **We will release a youtube video soon walking you through the steps!**
 
 ### Requirements
-- [Node](https://nodejs.org/en/)
+- [Node >= 16](https://nodejs.org/en/)
 - [Git](https://github.com/git-guides/install-git)
-- We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet.
+- We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet. 
 ### Install hatch CLI and clone this repo
 1. This is the [tool](https://www.npmjs.com/package/hatch-cli) that will automatically handle the NFT backend for you.
-`npm install hatch-cli`
+`npm install -g hatch-cli`
 2. Navigate to a directory you want to work in and run:
 `git clone https://github.com/kxl4126/hatch-cli-client.git`
 ### Create basic directory structure
@@ -16,7 +16,7 @@ Create three new, empty folders. One folder named **keys**, one named **assets**
 The folder structure should look something like:
 ![Folder Structure](https://i.imgur.com/hib3a0g.png)
 ### Configure your identity and fund your minting account
-1. Place your `Ed25519` key in `keys/keys.json`. You can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`
+1. Place your `Ed25519` key in `keys/keys.json`. If you don't have one, you can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`. **This identity is only used for minting and is different from your identity for your wallet or on the dfx CLI.**
 2. Run `hatch-cli identity`. 
 Save the output principal of the previous command. This is your minting account that needs to be funded for the CLI. Note that this account will be only used to manage your canister from the command line. Your NFTs and sale funds will still be minted to an account of your choice.
 3. Obtain **Psychedelic's WICP**. You need around ~ 1 WICP in the minting account. You can get WICP in the following ways:
@@ -34,7 +34,7 @@ Check the `config/` directory to manage different configuration options for your
    2. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
 2. **Place your NFT assets and metadata in the correct location.**
    1. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id. **Current canister message limits means that each NFT can only be 2 MB max at the moment**. We hope to get around this in the future with streaming strategies.
-   2. Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata. **Right now, all metadata is restricted to text fields**. We hope to make this more complex as Hatch gains traction.
+   2. Move your metadata (json) into the `metadata/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata. **Right now, all metadata is restricted to text fields**. We hope to make this more complex as Hatch gains traction.
    **Example folder structure:**
    ![Assets](https://i.imgur.com/3Ny9myT.png)
    ![Metadata](https://i.imgur.com/ZsaiwQI.png)
