@@ -86,7 +86,10 @@ Check the `config/` directory to manage different configuration options for your
 **All that's left is to wait for the big day!**
 
 View your sale at `https://hatchpad.com/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
-
+### Coming Soon
+**Post-launch management**
+- Managing and distributing airdrops to supporters
+- Listing on marketplace
 ### Contact  
 If you need assistance in setting anything up, please contact us at:
 - [Discord](https://discord.gg/n77xjyspDR)
