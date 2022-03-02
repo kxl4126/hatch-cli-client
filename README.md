@@ -33,8 +33,8 @@ Check the `config/` directory to manage different configuration options for your
    1. Edit `config/config.json` to include basic metadata for your collection, like `name`, `supply`, and `description`. The `saleName` field must be **unique**, as it identifies your project sale link. The `owner` field is the **principal id** that you NFTs will be minted to. It will also be the place where your **public sale funds are sent**, so make sure it is correct!
    2. Edit `config/links.json` with links to your media. This includes `gif`, `logo`, `banner`, `twitter`, etc.
 2. **Place your NFT assets and metadata in the correct location.**
-   1. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id.
-   2. Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata.  
+   1. Move your images (pngs) into the `assets/` directory. Make sure they are named properly --- `0.png`, `1.png`, ...  This serves as their NFT id. **Current canister message limits means that each NFT can only be 2 MB max at the moment**. We hope to get around this in the future with streaming strategies.
+   2. Move your metadata (json) into the `assets/` directory. Make sure they are named properly --- `0.json`, `1.json`, ... This serves as the corresponding NFT metadata. **Right now, all metadata is restricted to text fields**. We hope to make this more complex as Hatch gains traction.
    **Example folder structure:**
    ![Assets](https://i.imgur.com/3Ny9myT.png)
    ![Metadata](https://i.imgur.com/ZsaiwQI.png)
@@ -85,11 +85,15 @@ Check the `config/` directory to manage different configuration options for your
 
 **All that's left is to wait for the big day!**
 
-View your sale at `https://hatchpad.com/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
+View your sale at `https://<URL-TBD>.com/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
 ### Coming Soon
 **Post-launch management**
 - Managing and distributing airdrops to supporters
 - Listing on marketplace
+
+**Broader NFT support**
+- More complex and flexible metadata besides text.
+- Larger file size (> 2MB) support with streaming strategies and more complex querying support.
 ### Contact  
 If you need assistance in setting anything up, please contact us at:
 - [Discord](https://discord.gg/n77xjyspDR)
