@@ -37,6 +37,7 @@ src/assets/nft_generation/metadata/*
 
 assets/*
 assets_original/*
+assets_turtles/*
 metadata_original
 metadata/*
 
