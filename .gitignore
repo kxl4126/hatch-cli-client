@@ -41,3 +41,6 @@ metadata_original
 metadata/*
 
 fix.py
+assets*/*
+
+config_*/*
