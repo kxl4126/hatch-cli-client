@@ -1,13 +1,13 @@
 {
-  "name": "Hatch Tickets",
-  "description": "Lottery based NFT hosted by Hatch.",
+  "name": "Lottery NFT",
+  "description": "Lottery NFT hosted by Hatch",
   "supply": 10000,
   "symbol": "LTRY",
-  "owner": "lrval-kkjon-tggp3-cy3yo-hzgn6-seqv2-2fipw-3cyme-xdskp-2fgsz-7ae",
-  "ownerWalletAddress": "c0c300b7bc4e5be1a62c81ad4e7e88e3734b7c4c369253b83a05d20a57dcf1a3",
+  "owner": "3x32x-6wmpm-csmia-yjxg3-c6tck-t3ctk-qhkyj-wribs-kv5ye-w7rwn-kqe",
+  "ownerWalletAddress": "3e8e637478d53c0819d078040c44239a137fa0a5496893243bd5e014f57daef9",
   "saleName": "lottery",
   "contentType": "image/png",
-  "pinataSecretKey": "135ad8e3d108388574e8b64e17fb4f470057a7741ae6d2ba9511920a8085cd6d",
-  "pinataApiKey": "dee11c4c8ea36dc1ce78",
-  "mintCanister": "lqp4q-iqaaa-aaaak-aakga-cai"
+  "pinataApiKey": "2d5a82abce3a5dcc83ca",
+  "pinataSecretKey": "80df25a8c096cd925ab4815e02bb4540fd8e5bbcdc6d6a5fd7baf534154afd2b",
+  "mintCanister": "v7vsu-wqaaa-aaaai-qhpsa-cai"
 }

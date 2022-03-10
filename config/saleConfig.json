@@ -1,6 +1,7 @@
 {
-    "saleTime": 164810226,
-    "prices": [[0, 0.001]],
+    "saleTime": 164694240,
+    "prices": [[0, 0.1]],
     "whitelistDiscount": 0.1,
-    "reserveAmount": 0
+    "reserveAmount": 0,
+    "transactionLimit": 20
 }
