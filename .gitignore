@@ -44,3 +44,4 @@ fix.py
 assets*/*
 
 config_*/*
+metadata_*/*

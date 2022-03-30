@@ -1,13 +1,12 @@
 {
-  "name": "Lottery NFT",
-  "description": "Lottery NFT hosted by Hatch",
+  "name": "NFT name",
+  "description": "Description of your nft...",
   "supply": 10000,
-  "symbol": "LTRY",
-  "owner": "3x32x-6wmpm-csmia-yjxg3-c6tck-t3ctk-qhkyj-wribs-kv5ye-w7rwn-kqe",
-  "ownerWalletAddress": "3e8e637478d53c0819d078040c44239a137fa0a5496893243bd5e014f57daef9",
-  "saleName": "lottery",
+  "symbol": "XXXX",
+  "owner": "creator principal",
+  "ownerWalletAddress": "creator wallet address",
+  "saleName": "uniquelinknospaces",
   "contentType": "image/png",
-  "pinataApiKey": "2d5a82abce3a5dcc83ca",
-  "pinataSecretKey": "80df25a8c096cd925ab4815e02bb4540fd8e5bbcdc6d6a5fd7baf534154afd2b",
-  "mintCanister": "v7vsu-wqaaa-aaaai-qhpsa-cai"
+  "pinataSecretKey": "PINATA_SECRET_KEY",
+  "pinataApiKey": "PINATA_API_KEY"
 }
