@@ -8,7 +8,7 @@
 - We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet. 
 
 ### Install hatch CLI and clone this repo
-1. Install [hatch-cli](https://www.npmjs.com/package/hatch-cli) via npm. It will automatically handle the NFT backend for you. <br/> `npm install -g hatch-cli`
+1. Install [hatch-cli](https://www.npmjs.com/package/hatch-cli) via npm. It will automatically handle the NFT backend for you. <br/> `npm install -g hatch-cli`. You can also run `npm update -g hatch-cli` if you already have installed and just need to update.
 2. Navigate to a directory you want to work in and run:<br/>
 `git clone https://github.com/kxl4126/hatch-cli-client.git`
 
