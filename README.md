@@ -26,11 +26,12 @@ The folder structure should look something like:
 1. Place your `Ed25519` key in `keys/keys.json`. If you don't have one, you can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`. **This identity is only used for minting and is different from your identity for your wallet or on the dfx CLI.**
 2. Run `hatch-cli identity`. 
 Save the output principal of the previous command. This is your minting account that needs to be funded for the CLI. Note that this account will be only used to manage your canister from the command line. Your NFTs and sale funds will still be minted to an account of your choice.
-3. Obtain **Psychedelic's WICP**. You need around ~ 2 WICP in the minting account. You can get WICP in the following ways:
+3. **We are currently in beta, so you must message us to add you as an authorized creator with this identity**.
+4. Obtain **Psychedelic's WICP**. You need around ~ 2 WICP in the minting account. You can get WICP in the following ways:
    - Swap ICP for WICP with [Sonic](https://sonic.ooo/)
    - Or mint WICP directly from their canister. Follow the instructions at https://github.com/Psychedelic/wicp.
    - Or wrap your ICP with the wallet interface at [Hatch](https://hatch.market/).
-4. **Transfer WICP** to your minting account principal. You can do this in the following ways:
+5. **Transfer WICP** to your minting account principal. You can do this in the following ways:
    -  Use the Plug Wallet interface to transfer WICP to your minting principal.
    -  Or call transfer function directly from their canister to your minting principal. Follow the instructions at https://github.com/Psychedelic/wicp.
 
@@ -67,7 +68,7 @@ Check the `config/` directory to manage different configuration options for your
     **Make sure your metadata matches up with your assets!**
 
 ### Initialize your NFT canister and mint your NFTs!
-** DO NOT transfer your NFTs after minting them. This will mess up the configuration of the sale. ** 
+**DO NOT transfer your NFTs after minting them. This will mess up the configuration of the sale.** 
 1. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
 2. **Run** `hatch-cli validate` to do a basic check that all your files are valid.
 3. **Run** `hatch-cli mint` to **mint your NFTs**! This process can take a while. If you do not care about the actual order your NFTs are minted in, you can mint in parallel with `hatch-cli mint -p`. The canister will save which NFTs you have minted, so feel free to pause the process at any time and re-run `hatch-cli mint` to continue where you left off! All NFTs will be minted to `owner` specified in config.
