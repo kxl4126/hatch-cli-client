@@ -4,7 +4,7 @@
   "symbol": "XXXX",
   "owner": "creator principal",
   "ownerWalletAddress": "creator wallet address",
-  "saleName": "uniquelinknospaces",
+  "saleName": "uniquelinknospacesnospecialcharacters",
   "contentType": "image/png",
   "pinataSecretKey": "PINATA_SECRET_KEY",
   "pinataApiKey": "PINATA_API_KEY"
