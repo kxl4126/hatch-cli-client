@@ -1,7 +1,6 @@
 {
   "name": "NFT name",
   "description": "Description of your nft...",
-  "supply": 10000,
   "symbol": "XXXX",
   "owner": "creator principal",
   "ownerWalletAddress": "creator wallet address",
