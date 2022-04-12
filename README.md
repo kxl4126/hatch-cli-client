@@ -5,14 +5,14 @@
 ### Requirements
 - [Node >= 16](https://nodejs.org/en/)
 - [Git](https://github.com/git-guides/install-git)
-- We recommend using **Plug Wallet** for the funding stage, as they have WICP built in to their wallet. 
+- We highly recommend using **Plug Wallet** for the funding stage, as they have WICP functionality built in to their wallet.
 
-### Install hatch CLI and clone this repo
-1. Install [hatch-cli](https://www.npmjs.com/package/hatch-cli) via npm. It will automatically handle the NFT backend for you. <br/> `sudo npm install -g hatch-cli`. You can also run `sudo npm update -g hatch-cli` if you already have installed and just need to update.
+### Step 1 - Install hatch CLI and clone this repo
+1. Install [hatch-cli](https://www.npmjs.com/package/hatch-cli) via npm. It will automatically handle the NFT backend for you. <br/> `sudo npm install -g hatch-cli`. You can also run `sudo npm update -g hatch-cli` if you already have installed and just need to update. We highly recommend you install it globally, but you can also install hatch-cli only in the local directory.
 2. Navigate to a directory you want to work in and run:<br/>
 `git clone https://github.com/kxl4126/hatch-cli-client.git`
 
-### Set up pinata for IPFS
+### Step 2 - Set up pinata for IPFS
 You will need to setup IPFS with [Pinata](https://app.pinata.cloud/). We use IPFS for now, because it essentially offers unbounded file storage for any file type. User experience on the IC will still be the same.
 1. Create an API key. ![Create API](https://i.imgur.com/rGHvK5g.png)
 2. Save your API keys. ![API Keys](https://i.imgur.com/jtMINuH.png)
@@ -22,7 +22,7 @@ Make `keys/`, `assets/`, and `metadata/` folders. You will need these later.
 The folder structure should look something like:
 ![Folder Structure](https://i.imgur.com/hib3a0g.png)
 
-### Configure your identity and fund your minting account
+### Step 3 - Configure your identity and fund your minting account
 1. Place your `Ed25519` key in `keys/keys.json`. If you don't have one, you can also allow the CLI to **generate a temporary identity** for you, by running: `hatch-cli identity`. **This identity is only used for minting and is different from your identity for your wallet or on the dfx CLI.**
 2. Run `hatch-cli identity`. 
 Save the output principal of the previous command. This is your minting account that needs to be funded for the CLI. Note that this account will be only used to manage your canister from the command line. Your NFTs and sale funds will still be minted to an account of your choice.
@@ -35,7 +35,7 @@ Save the output principal of the previous command. This is your minting account 
    -  Use the Plug Wallet interface to transfer WICP to your minting principal.
    -  Or call transfer function directly from their canister to your minting principal. Follow the instructions at https://github.com/Psychedelic/wicp.
 
-### Configure your collection
+### Step 4 - Configure your collection
 Check the `config/` directory to manage different configuration options for your collection.
 1. **Configure your initial canister metadata.**
    1. Edit `config/config.json` to include basic metadata for your collection.
@@ -67,14 +67,14 @@ Check the `config/` directory to manage different configuration options for your
     ```
     **Make sure your metadata matches up with your assets!**
 
-### Initialize your NFT canister and mint your NFTs!
+### Step 5 - Initialize your NFT canister and mint your NFTs!
 **DO NOT transfer your NFTs after minting them. This will mess up the configuration of the sale.** 
 1. **Run** `hatch-cli init` to initialize your NFT canister. You must have funded your minting principal to perform this step. **Make sure your `config/config.json` is correct! You can only run this step once and all information is final!**
 2. **Run** `hatch-cli validate` to do a basic check that all your files are valid.
 3. **Run** `hatch-cli mint` to **mint your NFTs**! This process can take a while. If you do not care about the actual order your NFTs are minted in, you can mint in parallel with `hatch-cli mint -p`. The canister will save which NFTs you have minted, so feel free to pause the process at any time and re-run `hatch-cli mint` to continue where you left off! All NFTs will be minted to `owner` specified in config.
 4. (Optional, Recommended) **Configure DAB** by submitting this [form](https://dab-ooo.typeform.com/nft-list?typeform-source=hatch.market). This will allow your NFTs to be surfaced on Plug wallet. Choose **DIP721 V2** and link this https://github.com/Psychedelic/DIP721 as the standard for the nft.
 
-### Configure and host your public sale
+### Step 6 - Configure and host your public sale
 **Here we will set up the properties of your public sale!**
 1. **Edit config/saleConfig.json.**
    - `saleTime` represents the unix timestamp (in seconds) of your public sale start time.
@@ -109,7 +109,7 @@ Check the `config/` directory to manage different configuration options for your
 
 View your sale at `https://hatch.market/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
 
-### Claiming your funds
+### Step 7 - Claiming your funds
 1. **Run** `hatch-cli claim` to claim your funds. **Your pending WICP will be deposited to your creator principal**.
 
 

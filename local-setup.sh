@@ -1,0 +1,1 @@
+alias hatch-cli=./node_modules/hatch-cli/bin/index.js
