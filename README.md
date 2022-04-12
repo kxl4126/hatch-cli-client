@@ -104,9 +104,15 @@ Check the `config/` directory to manage different configuration options for your
 ```
 3. **Run** `hatch-cli sale` to set up your sale. You can always change your sale configuration, as long as no NFTs have been sold yet. **Run `hatch-cli sale -f` to force another set up sale with a different `config/saleConfig.json`**.
 
+
 **All that's left is to wait for the big day!**
 
 View your sale at `https://hatch.market/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
+
+### Claiming your funds
+1. **Run** `hatch-cli claim` to claim your funds. **Your pending WICP will be deposited to your creator principal**.
+
+
 ### Coming Soon
 **Post-launch management**
 - Managing and distributing airdrops to supporters
