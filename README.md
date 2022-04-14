@@ -1,6 +1,6 @@
 # Hatch
 
-**We will release a youtube video soon walking you through the steps!**
+### [Youtube Walkthrough](https://youtu.be/B7Z_4ERYziM)
 
 ### Requirements
 - [Node >= 16](https://nodejs.org/en/)
@@ -77,7 +77,7 @@ Check the `config/` directory to manage different configuration options for your
 ### Step 6 - Configure and host your public sale
 **Here we will set up the properties of your public sale!**
 1. **Edit config/saleConfig.json.**
-   - `saleTime` represents the unix timestamp (in seconds) of your public sale start time.
+   - `saleTime` represents the unix timestamp (in seconds) of your public sale start time. Use a site like [this one](https://www.unixtimestamp.com/index.php) to convert a date to a unix timestamp.
    - `whitelistDiscount` represents how much discount (in ICP) whitelisted members get.
    - `reserveAmount` is how many NFTs to exclude from the sale. Those will be kept in the owner account.
    - `transactionLimit` is how many NFTs a user can be bought in one transaction.
