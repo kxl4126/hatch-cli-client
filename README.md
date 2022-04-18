@@ -110,7 +110,7 @@ Check the `config/` directory to manage different configuration options for your
 View your sale at `https://hatch.market/sale/{saleName}`, where saleName is the `saleName` you specified in `config/config.json`.
 
 ### Step 7 - Claiming your funds
-1. **Run** `hatch-cli claim` to claim your funds. **Your pending WICP will be deposited to your creator principal**.
+1. **Run** `hatch-cli wicp claim` to claim your funds. **Your pending WICP will be deposited to your creator principal**.
 
 
 ### Coming Soon
